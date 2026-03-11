@@ -201,6 +201,9 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+git add render.yaml
+git commit -m "Add render.yaml"
+git push
 # Marimo
 marimo/_static/
 marimo/_lsp/
