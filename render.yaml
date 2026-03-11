@@ -1,0 +1,16 @@
+# Exported from Render on 2026-03-11T06:54:36Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: test
+      runtime: python
+      repo: https://github.com/thirapakontimmy-oss/test
+      plan: free
+      region: singapore
+      buildCommand: pip install numpy opencv-python flask
+      startCommand: gunicorn tes.wsgi
+      autoDeployTrigger: commit
